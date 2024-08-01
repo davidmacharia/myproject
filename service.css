@@ -1,0 +1,183 @@
+﻿body {
+    background-color:grey;
+}
+h1 {
+    font-size:3vh;color:brown;font-family:sans-serif;
+}
+marquee{animation:fire 10s linear infinite;}
+     @keyframes fire{100%{background:black;color:gold;}}
+.top{
+z-index:4;
+font-size:4vh;
+position:absolute;
+top:0;padding:0.5%;
+overflow:hidden;
+right:1%;
+bottom:80%;text-align:center;
+justify-content:center;
+display:flex;
+max-width:100%;
+max-height:5%;
+background-color:green;
+color:white;
+left:0.5%;
+}
+
+.above{
+    border-radius:1px;
+    background:white;
+    background-image:url("macharia.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    left:0.5%;
+    right:45%;
+    overflow:hidden;
+    bottom:55%;
+    top:2%;
+    border:1px solid green;
+    max-width:45%;
+    min-height:36%;
+    animation:boss 30s 20s linear infinite;
+}
+@keyframes boss{100%{
+    background-image:url("beatrice.jpg");border-radius:0 0 0 10px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    left:0;
+    margin-left:1%;
+    right:45%;
+    overflow:hidden;
+    bottom:55%;
+    top:2%;
+    border:1px solid green;
+    max-width:45%;
+    min-height:36%;}}
+
+
+p {
+    font-size:2.5vh;
+    font-family: sans-serif;
+}
+.writing {
+    justify-content:center;
+    right:1%;
+    border:1px solid green;
+    top:5%;
+    border-radius:1px ;
+    background:antiquewhite;
+    color: black;
+    position: absolute; 
+    font-family: sans-serif;
+    font-size:4vh;
+    text-overflow: ellipsis;
+    left:35%;
+    text-align: center;
+    bottom:55%;
+    max-height:60%;
+    max-width:70%;
+    padding:5%;
+    z-index: 2;
+    
+}
+.body{
+    background-color:green;
+    color:white;
+    position:absolute;
+    top:45%;
+    left:0.5%;
+    right:1%;
+    font-size:2.3vh;
+    bottom:39%;
+    overflow:auto;
+    z-index:1;
+    padding:0;
+   bottom:0;
+   min-width:98%;max-height:25%;
+
+}
+.ecommerce,.webdesign,.managment{
+    position:absolute;
+    background-color:white;
+    font-size:2vh;
+    font-family:sans-serif;
+    top:60%;
+    bottom:1%;
+    text-align: center;
+    left:2%;
+    right:65%;
+    overflow:auto;
+    border:1vh solid green;
+    border-radius:10px;
+    max-width:32%;
+    max-height:60%;
+    padding:1%;
+    z-index:2;
+     animation:radio 6s linear infinite;
+    
+}
+
+
+.socialmedia, .webhosting,.customer {
+    top:100%;
+    position:absolute;
+    background:white;
+    bottom:-40%;
+    overflow: auto;
+    font-family:sans-serif;
+    font-size:3vh;
+    left: 2%;
+    right:65%;
+    border:1vh solid green;
+    border-radius: 10px;
+    max-width:32%;
+    max-height:60%;
+    padding:1%;
+    border-right:1vh solid blue;
+    animation:radio 6s linear infinite;
+}
+@keyframes radio{10%{border-right:1vh solid green;border-top:1vh solid blue;}
+20%{border-right:1vh solid green;border-top:1vh solid green;border-left:1vh solid blue;}
+80%{border-right:1vh solid green;border-bottom:1vh solid blue;}
+100%{border-right:1vh solid gold;}}
+.webdesign,.webhosting {
+    left:36%;
+right:33%;
+}
+.managment,.customer{
+    left: 68%;
+right:1%; 
+}
+.bottom{
+top:142%;
+    position:absolute;
+    background:black;
+    color:silver;
+    border-radius: 0 0 8px 8px;
+    bottom:-60%;
+    overflow: auto;
+    font-family:sans-serif;
+    font-size:3vh;
+    padding-top:2%;
+    left: 0.5%;
+    right:1%;
+    max-width:100%;
+    max-height:50%;
+}
+a{text-decoration:none;}
+a:hover{color:red;}
+@media screen and (min-width:700px){
+body{background-color:aquamarine;}
+#list,li{background-color:aliceblue;}
+h1{font-size:2.4vh;}
+.socialmedia, .webhosting,.customer,.ecommerce,.webdesign,.managment,.top,p
+,.content
+{
+
+font-family:sans-serif;
+font-size:32.5
+body{background-color:antiquewhite;}
+}
