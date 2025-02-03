@@ -1,0 +1,52 @@
+<html>
+<head><title>load</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+}
+#loader{ 
+    
+width:8vh;height:8vh;border:2px solid rgb(24, 84, 222);
+border-radius:5vh;
+border-left:2px dotted green;animation: spin 1s linear infinite;
+}
+@keyframes spin{100%{transform: rotate(360deg);}}
+p{padding-left:50%;}
+</style>
+</head>
+<body>
+    <div id="loading">
+    <div id="loader"></div>
+    <p>Please wait....</p>
+    </div>
+    <script>
+        setTimeout(()=>{
+document.getElementById("loader").style.display="none";
+  var p=document.querySelector("p");
+  p.style.backgroundColor="white";
+  p.style.height="25vh";
+  p.style.width="40vw";
+  p.style.borderRadius="8px";
+  p.style.textAlign='center';
+  p.style.padding="10px";
+  p.innerHTML=
+ "<h1 style='color:green'>Congratulation!</h1> Land registration success</br><img style='width:10vh;height:10vh;border-radius:50% ;margin-top:2%' src='success.png'>";
+       
+   },1000);
+        setTimeout(()=>{
+ location.href="myform.php";
+       
+   },2000);
+       
+       </script>
+
+
+</body>
+</html>

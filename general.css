@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+}
+#container {
+    background-color: #fff;
+    margin-top:0;
+    display:none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    padding: 5%;
+}
+    #loader{ 
+
+width:10vh;height:10vh;border:2px solid rgb(24, 84, 222);
+border-radius:5vh;
+margin-left:50%;
+border-left:2px dotted green;animation: spin 1s linear infinite;
+}
+@keyframes spin{100%{transform: rotate(360deg);}}
+p{padding-left:30%;}
+span{
+text-decoration:underline dashed black;
+padding-left:5%;color:blue;}

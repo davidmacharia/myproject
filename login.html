@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #33ccff, #ff99cc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        label {
+            text-align: left;
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        select, input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        input[type="password"] {
+            letter-spacing: 1px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .links {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .links a {
+            color: #007BFF;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #0056b3;
+        }
+
+        /* Animation for fadeIn */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" id="myform" method="post">
+            <label for="account">Select Account</label>
+            <select id="account" name="account" required>
+                <option value="landOwner">Land Owner</option>
+                <option value="admin">Admin</option>
+                <option value="surveyor">Survey</option>
+            </select>
+            <input type="email" id="email" placeholder="Email" name="email" required>
+            <input type="password" id="password" placeholder="Password" name="password" minlength="6" maxlength="6" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="forgot.html">Forgot Password?</a>
+            <a href="register.php">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+a{
+    display: block;
+    width:20vw;
+    color: #fff;
+    border: none;
+    margin: 1vw;
+    padding:0.5vh;
+    text-align:10%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+a:hover{
+    background-color: rgb(19, 135, 21);
+}
+#sidebar{
+        margin: 0;
+        padding: 0;
+        text-align:left;
+        position: absolute;
+        width:23%;
+        margin-top:7vh;
+        padding: 1vh;
+        z-index: 2;
+        background-color: #f1f1f1;
+        height: 100%;
+}
+@media screen and (max-width: 768px) {
+    #sidebar{
+        width: 100%;
+        height: auto;
+        position:absolute;
+    }
+    #content1,#content2,#content3,#content4,#content5,#content6{
+        margin-left:-20vw;
+    
+   width:30vw
+    !important
+    }
+    
+       
+
+a{display: inline;
+}
+#content3,#content6{margin-left:-7vw;}
+#content2,#content5{margin-left:-14vw;}
+#content{
+    margin-top: 40vh;
+     margin-left: -23vw;
+width:100%
+!important
+}
+#hr{
+margin-left: -20vw;
+width:90vw
+!important
+    }
+}
+#top{
+position:absolute;
+width:100%;
+margin-top: 0;
+top:0;
+padding:0.5%;
+z-index: 3;
+height:7vh;
+}
+img{
+    height:98%;
+    margin-top: 0.5%;
+}
+#content1:hover,#content2:hover,#content3:hover,
+#content5:hover,#content6:hover,
+#content4:hover{background-color: #1aa130;}
+    #content1,#content2,#content3, #content4,
+    #content5,#content6{
+position:absolute;
+    background:green;
+    display:inline;
+    color: #fff;
+    font-size: medium;
+    border-radius:5px;
+    border-bottom: 5px solid rgb(109, 242, 140);
+    left:24vw;
+    text-align:center;
+    height:20%;
+    width:23vw;
+    margin-top:10vh;
+        }
+        #virtual{margin-top:15vh;}
+        span{
+            color:#1aa130;
+            animation: spin 1s linear infinite;
+
+        }
+        @keyframes spin{
+            100%{
+                transform:rotate(20deg);
+            }
+        }
+    #content2{left:50vw;}
+        #content3{left:75vw;}
+
+        #content{
+        position:absolute;
+    display:inline;
+    border-radius:5vh;
+    display: none;
+    left:24vw;
+    height:90vh;
+    width:75vw;
+    margin-top:13vh;
+    z-index: 1;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content:left;
+        align-items: left;
+        height: 100vh;
+
+        background-color: #f0f0f0;
+    }
+    #hr{
+    background:black;
+    position:absolute;
+    border:none;
+    left:25vw;
+    width:75vw;
+    margin-top:36vh;
+    height:3px;
+        }
+    
+        #content4,#content5,#content6{
+            margin-top:40vh; 
+                
+                
+        }
+        #content5{left:50vw;}
+        #content6{left:75vw;}
+/*
+else{
+    echo 
+    "<html>
+    <head>
+    <title>Result for land Search</title>
+    <script>
+    function search(){
+    setTimeout(()=>{
+    
+        document.getElementById('container').style.display='block';
+        document.getElementById('loading').style.display='none';
+    },1000);
+     setTimeout(()=>{
+    location.href='myform.php';
+    },4000)
+}
+    </script>
+ <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+      <link rel='stylesheet' href='general.css'>
+    <style>
+        #container {
+            width: 30vw;
+            text-align:center;
+            padding:10px;
+        }
+            </style>
+    </head>
+    <body onload='search()'>
+        <div id='loading'>
+        <div id='loader'></div>
+    <p>Please wait....</p>
+    </div>
+    <div id='container'>
+    <h1 style='color:green'>Sorry!</h1>
+    No property registered yet
+    
+    </br><img style='width:10vh;height:10vh;border-radius:50% ;margin-top:2%' src='fail.png'>
+    </div> </body></html>";
+}
+?>
+*/
